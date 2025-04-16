@@ -1,31 +1,25 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomePageController;
 
-Route::get('/', function () {
-    return view('web.homepage');
-});
 
-Route::get('products', function(){
-    return view('web.products');
-});
+Route::get('/',[HomePageController::class,'index']);
 
-Route::get('product/{slug}', function($slug){
-    return "halaman single product - ".$slug;
-});
 
-Route::get('categories', function(){
-    return view('web.categories');
-});
+Route::get('products', [HomePageController::class, 'products']);
 
-Route::get('categories/{slug}', function($slug){
-    return view('web.single_category', ['slug'=>$slug]);
-});
 
-Route::get('cart', function(){
-    return view('web.cart');
-});
+Route::get('product/{slug}', [HomePageController::class, 'product']);
 
-Route::get('checkout', function(){
-    return view('web.checkout');
-});
+
+Route::get('categories',[HomePageController::class, 'categories']);
+
+
+Route::get('category/{slug}', [HomePageController::class, 'category']);
+
+
+Route::get('cart', [HomePageController::class, 'cart']);
+
+
+Route::get('checkout', [HomePageController::class, 'checkout']);

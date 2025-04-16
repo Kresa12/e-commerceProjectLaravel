@@ -21,8 +21,8 @@
                             Categories
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/categories/pria">Pria</a></li>
-                            <li><a class="dropdown-item" href="/categories/wanita">Wanita</a></li>
+                            <li><a class="dropdown-item" href="/category/Pakaian Pria">Pria</a></li>
+                            <li><a class="dropdown-item" href="/category/Pakaian Wanita">Wanita</a></li>
                         </ul>
                     </li>
                 </ul>
