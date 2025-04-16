@@ -1,5 +1,5 @@
 <x-layout>
-    <h1>Ini adalah halaman homepage</h1>
+    {{-- <h1>Ini adalah halaman homepage</h1> --}}
     <div class="row">
         <h3>Categories</h3>
         @foreach ($categories as $category)
